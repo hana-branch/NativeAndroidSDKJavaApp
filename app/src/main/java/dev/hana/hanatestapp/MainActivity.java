@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             showTrackingDialog(this);
         }
         if (approved != "") {
-            branchSDKInitialize("", this);
+            branchSDKInitialize(approved, this);
         }
     }
 
@@ -95,14 +95,12 @@ public class MainActivity extends AppCompatActivity {
         if (approved == "") {
             String preferencesApproved = preferences.getString("approved", "null");
             if (preferencesApproved != "") {
-                Log.e("BranchSDK", "branchSDKInitialize preferencesApproved :" + preferencesApproved);
                 Branch.getInstance().disableTracking(!Boolean.parseBoolean(preferencesApproved));
                 Branch.sessionBuilder(currentActivity).withCallback(branchReferralInitListener)
                         .withData(getIntent() != null ? getIntent().getData() : null).init();
             }
         }
         else {
-            Log.e("BranchSDK", "branchSDKInitialize approved :" + approved);
             Branch.getInstance().disableTracking(!Boolean.parseBoolean(approved));
             Branch.sessionBuilder(currentActivity).withCallback(branchReferralInitListener)
                     .withData(getIntent() != null ? getIntent().getData() : null).init();
