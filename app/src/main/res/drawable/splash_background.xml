@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="branch"
+        android:drawable="@drawable/bg_gradient"/>
+<!--    <item-->
+<!--        android:gravity="center"-->
+<!--        android:height="5dp"-->
+<!--        android:width="5dp"-->
+<!--        android:drawable="@drawable/logo" />-->
+</layer-list>

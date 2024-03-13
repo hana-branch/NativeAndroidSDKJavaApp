@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hana TEST App</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="button_share">Share</string>
+    <string name="button_creation">Create Link</string>
+    <string name="ok">Allow</string>
+    <string name="cancel">Deny</string>
+    <string name="dialog_message">Please allow us to track your activities to provide better experience</string>
+    <string name="dialog_title">Please Allow Tracking</string>
+</resources>

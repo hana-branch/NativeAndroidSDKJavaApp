@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+
+    // Add the Google services Gradle plugin
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 34
+    defaultConfig {
+        applicationId "dev.hana.hanatestapp"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 2
+        versionName "2.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'dev.hana.hanatestapp'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
+
+    // OneSignal SDK for Push Notification
+//    implementation 'com.onesignal:OneSignal:[5.0.0, 5.99.99]'
+
+
+    // TUNE SDK
+    api 'com.tune:tune-marketing-console-sdk:6.1.2'
+    // Branch SDK
+    implementation 'io.branch.sdk.android:library:5.8.1'
+    // okhttp
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+
+    // required if your app is in the Google Play Store (tip: avoid using bundled play services libs)
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    // optional
+    // Chrome Tab matching (enables 100% guaranteed matching based on cookies)
+    implementation 'androidx.browser:browser:1.7.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    // Chrome Tab matching (enables 100% guaranteed matching based on cookies), androidx.browser:browser works just the same
+
+}
+repositories {
+    mavenCentral()
+}

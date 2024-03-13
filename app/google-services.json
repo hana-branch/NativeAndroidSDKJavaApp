@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "671445210229",
+    "project_id": "hana-test-android-app",
+    "storage_bucket": "hana-test-android-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671445210229:android:8cd0577fb171d6711e143c",
+        "android_client_info": {
+          "package_name": "dev.hana.hanatestapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671445210229-bhjl3a3f7euctvvn2ehljjbm351k31dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZuP7jE5kFOo-uka6qTuVMsO1oA_Vg1uM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671445210229-bhjl3a3f7euctvvn2ehljjbm351k31dk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

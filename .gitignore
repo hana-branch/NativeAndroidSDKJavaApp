@@ -1,0 +1,31 @@
+# built application files
+*.apk
+*.ap_
+
+# Eclipse
+*.class
+gen/*
+bin/*
+proguard/
+
+# Android Studio
+.idea
+*.iml
+local.properties
+build/
+
+# Gradle
+build/*
+.gradle/*
+.metadata/*
+
+# Generated files
+bin/
+gen/
+out/
+
+# Misc.
+*.DS_Store
+
+# Log Files
+*.log
